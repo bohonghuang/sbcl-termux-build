@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SBCL_VERSION="2.2.10"
+SBCL_VERSION="2.2.11"
 
 apt-get install clang zstd git
 
@@ -20,7 +20,7 @@ then
     sbcl_xc_host="ecl --c-stack 16777217 --norc"
 fi
 
-curl -L "http://downloads.sourceforge.net/project/sbcl/sbcl/2.2.10/sbcl-$SBCL_VERSION-source.tar.bz2" -o "sbcl-$SBCL_VERSION-source.tar.bz2"
+curl -L "http://downloads.sourceforge.net/project/sbcl/sbcl/$SBCL_VERSION/sbcl-$SBCL_VERSION-source.tar.bz2" -o "sbcl-$SBCL_VERSION-source.tar.bz2"
 tar -xvjf "sbcl-$SBCL_VERSION-source.tar.bz2"
 cd "sbcl-$SBCL_VERSION"
 sed -i "s/#ifdef SVR4/#if defined(SVR4) || defined(LISP_FEATURE_ANDROID)/" src/runtime/run-program.c

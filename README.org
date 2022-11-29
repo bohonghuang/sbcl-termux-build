@@ -10,9 +10,9 @@ Install ~zstd~ before getting started, which is required by ~SB-CORE-COMPRESSION
 Download and extract the prebuilt SBCL for Termux, which is available on the [[https://github.com/bohonghuang/sbcl-termux-build/releases][Release]] page:
 
 #+BEGIN_SRC sh
-  curl -OL "https://github.com/bohonghuang/sbcl-termux-build/releases/download/2.2.10/sbcl-2.2.10-arm64-termux.tar.zst"
-  unzstd -c "sbcl-2.2.10-arm64-termux.tar.zst" | tar -xf -
-  cd "sbcl-2.2.10"
+  curl -OL "https://github.com/bohonghuang/sbcl-termux-build/releases/download/2.2.11/sbcl-2.2.11-arm64-termux.tar.zst"
+  unzstd -c "sbcl-2.2.11-arm64-termux.tar.zst" | tar -xf -
+  cd "sbcl-2.2.11"
 #+END_SRC
 
 Now you can run SBCL with:
@@ -27,4 +27,4 @@ If it runs without problems, install SBCL with:
   sh install.sh
 #+END_SRC
 * Reference
-- [[https://bugs.launchpad.net/sbcl/+bug/1956852]]
+- [[https://bugs.launchpad.net/sbcl/+bug/1956852]] /for building SBCL using ECL on Android with Termux/
