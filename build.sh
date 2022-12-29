@@ -1,8 +1,8 @@
 #!/bin/sh
 
-SBCL_VERSION="2.2.11"
+SBCL_VERSION="2.3.0"
 
-apt-get install clang zstd git
+apt-get install make clang zstd git
 
 sbcl_xc_host="sbcl"
 
