@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SBCL_VERSION="2.3.0"
+SBCL_VERSION="2.3.1"
 
 apt-get install make clang zstd git
 
