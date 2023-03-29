@@ -10,9 +10,9 @@ Install ~zstd~ before getting started, which is required by ~SB-CORE-COMPRESSION
 Download and extract the prebuilt SBCL for Termux, which is available on the [[https://github.com/bohonghuang/sbcl-termux-build/releases][Release]] page:
 
 #+BEGIN_SRC sh
-  curl -OL "https://github.com/bohonghuang/sbcl-termux-build/releases/download/2.3.2/sbcl-2.3.2-arm64-termux.tar.zst"
-  unzstd -c "sbcl-2.3.2-arm64-termux.tar.zst" | tar -xf -
-  cd "sbcl-2.3.2"
+  curl -OL "https://github.com/bohonghuang/sbcl-termux-build/releases/download/2.3.3/sbcl-2.3.3-arm64-termux.tar.zst"
+  unzstd -c "sbcl-2.3.3-arm64-termux.tar.zst" | tar -xf -
+  cd "sbcl-2.3.3"
 #+END_SRC
 
 Now you can run SBCL with:
